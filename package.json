@@ -3,15 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "dev": "ndoemon api/index.js",
-    "start": "node api/index.js"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohitAgarwal9639/real-estate-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohitAgarwal9639/real-estate-project/issues"
+  },
+  "homepage": "https://github.com/RohitAgarwal9639/real-estate-project#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0",
+    "nodemon": "^3.1.9"
   }
 }
