@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node api/index.js",
     "dev": "nodemon api/index.js"
-
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/RohitAgarwal9639/real-estate-project#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.11.0",
