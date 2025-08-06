@@ -12,7 +12,7 @@ app.use(cookieParser());
 
 //connect to mongodb
 mongoose.connect(process.env.MONGO).then(() => console.log("Connected to MongoDB")).catch(err => console.log("MongoDB Connection Error:", err));
-app.use('/api/users',userRouter);
+app.use('/api/user',userRouter);
 app.use('/api/auth',authRouter);
 
 //error handling middleware

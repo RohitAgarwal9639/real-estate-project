@@ -9,7 +9,7 @@ import PrivateRoute from './Components/privateRoute';
 
 
 export default function App() {
-  return <BrowserRouter>
+  return (<BrowserRouter>
   <Header />
   <Routes>
     <Route path="/" element={<Home/>} />
@@ -20,5 +20,6 @@ export default function App() {
     <Route path="/profile" element={<Profile/>} />
     </Route>
   </Routes>  
-  </BrowserRouter>;
+  </BrowserRouter>
+  );
 }

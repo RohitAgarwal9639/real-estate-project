@@ -1,8 +1,10 @@
 import User from "../models/user.model.js";
 import { errorHandler } from "../utils/error.js";
 import bcryptjs from "bcryptjs";
-export const test=(req,res)=>{
-    res.send('hello world');
+export const test = (req, res) => {
+  res.json({
+    message: 'Api route is working!',
+  });
 };
 export const updateUser=async (req,res,next)=>{
     if(req.user.id!==req.params.id){
@@ -19,7 +21,7 @@ export const updateUser=async (req,res,next)=>{
                 password:req.body.password,
                 avatar:req.body.avatar,
             }
-        },{new:true})
+        },{new:true});
         const {password,...rest}=updateUser._doc;
         res.status(200).json(rest);
     }catch(error){
