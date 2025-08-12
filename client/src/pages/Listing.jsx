@@ -15,6 +15,7 @@ import {
   FaShare,
 } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
+import Contact from '../Components/Contact';
 
 export default function Listing() {
     SwiperCore.use([Navigation]);
